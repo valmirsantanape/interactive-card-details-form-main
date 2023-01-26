@@ -18,16 +18,51 @@
 }
 
 body{
+    height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
     padding: 2rem 2rem;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 700px;
+    display: grid;
+}
+.inM-Y{
+    width: 5.5rem;
+}
+.inMM{
+    
+}
+.inYY{
+
+}
+.submit {
+    width: ;
+}
+.information {
+    display: none;
+}
+.card {
+    position: absolute;
+    top: 10%;
+    
 }
 
 .front-card{
-    background-image: linear-gradient(  to right,  hsl(249, 99%, 64%),  hsl(0, 100%, 66%) ,hsl(278, 94%, 30%) );
-    padding: 1rem 1.5rem ;
+    background-image: url("/images/bg-card-front.png");
+    padding: 0 1rem;
     padding-top: 1.5rem;
-    max-width: 21rem;
-    border-radius: .5rem;
+    width: 26rem;
+    padding-bottom: 1.8rem ;
+    
+    
 }
 .cicles{
     display: flex;
@@ -39,7 +74,6 @@ body{
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
-    border-radius: 1px solid;
 }
 .circle-secundary {
     height: 1rem;
@@ -53,7 +87,7 @@ body{
 }
 .data-card {
     color: var(--White);
-    padding: 4.5rem 0 0 0;
+    padding-top: 4.5rem ;
     flex-wrap: wrap;
     line-height: 2rem;
 }
@@ -63,3 +97,11 @@ body{
     justify-content: space-between ;
 }
 
+.verso-card {
+    
+    margin-top: 1rem;
+    background-image: url("/images/bg-card-back.png") ;
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
