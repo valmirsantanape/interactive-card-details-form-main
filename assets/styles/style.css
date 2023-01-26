@@ -19,5 +19,47 @@
 
 body{
     font-family: 'Space Grotesk', sans-serif;
-
+    padding: 2rem 2rem;
 }
+
+.front-card{
+    background-image: linear-gradient(  to right,  hsl(249, 99%, 64%),  hsl(0, 100%, 66%) ,hsl(278, 94%, 30%) );
+    padding: 1rem 1.5rem ;
+    padding-top: 1.5rem;
+    max-width: 21rem;
+    border-radius: .5rem;
+}
+.cicles{
+    display: flex;
+    align-items: center;
+}
+.circle-primary {
+    margin-right: 1rem;
+    background-color: var(--White);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border-radius: 1px solid;
+}
+.circle-secundary {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.number-card{
+    text-align: center;
+    font-size: 22pt;
+}
+.data-card {
+    color: var(--White);
+    padding: 4.5rem 0 0 0;
+    flex-wrap: wrap;
+    line-height: 2rem;
+}
+.client-card{
+    padding-top: 1rem ;
+    display: flex;
+    justify-content: space-between ;
+}
+
