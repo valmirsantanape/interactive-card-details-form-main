@@ -34,18 +34,18 @@ form {
     width: 700px;
     display: grid;
 }
+.security{
+    display: flex;
+}
+.box-inM-Y {
+    display: flex;
+}
 .inM-Y{
+    
     width: 5.5rem;
 }
-.inMM{
-    
-}
-.inYY{
 
-}
-.submit {
-    width: ;
-}
+
 .information {
     display: none;
 }

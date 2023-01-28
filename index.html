@@ -55,18 +55,22 @@
     <p>Card Number</p>
     <input type="text" placeholder=" e.g. 1234 5678 9123 0000"></input>
    
-    <div>
-      <p>Exp. Date (MM/YY) </p>
-      <input type="text" class="inM-Y" placeholder="MM"></input>
-      <input type="text" class="inM-Y" placeholder="YY"></input>
-      <p>
-        CVC
-        <input type="text" placeholder="e.g. 123"></input></p>
-       
+    <div class="security">
+      
+      <div class="box-M-Y">
+          <p>Exp. Date (MM/YY) </p>
+        <div class="box-inM-Y">
+            <input type="text" class="inM-Y" placeholder="MM"></input>
+            <input type="text" class="inM-Y" placeholder="YY"></input>
+        </div>
+      </div>
+      
+      <div class="security-code">
+        <p>CVC</p>
+        <input type="text" placeholder="e.g. 123"></input>
+      </div>
     </div>
-    
-    
-    
+
     
     <input type="submit" class="submit" value="Confirm"></input>
   </form>
