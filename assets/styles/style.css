@@ -20,7 +20,7 @@
 body{
     height: 100vh;
     font-family: 'Space Grotesk', sans-serif;
-    padding: 2rem 2rem;
+    padding: 10px;
     
 }
 
@@ -29,11 +29,25 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-
+.formulary {
+    margin-right: 20rem ;
+    
+    display: flex;
+    justify-content: center;
+    
+}
 form {
-    width: 700px;
+    width: fit-content;
     display: grid;
 }
+form input {
+    margin: 0 0 1rem 0;
+    font-size: 15pt;
+    line-height: 3rem;
+    border-radius: 10px;
+    padding: 0 1rem;
+}
+
 .security{
     display: flex;
 }
@@ -41,18 +55,22 @@ form {
     display: flex;
 }
 .inM-Y{
-    
+    margin-right: .5rem;
     width: 5.5rem;
 }
 
-
+.submit{
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+}
 .information {
     display: none;
+    
 }
 .card {
     position: absolute;
-    top: 10%;
-    
+    top: 25%;
+    margin-left: 10rem ;
 }
 
 .front-card{
@@ -61,7 +79,6 @@ form {
     padding-top: 1.5rem;
     width: 26rem;
     padding-bottom: 1.8rem ;
-    
     
 }
 .cicles{
@@ -98,10 +115,43 @@ form {
 }
 
 .verso-card {
-    
-    margin-top: 1rem;
+    margin: 1rem 0 0 5rem;
     background-image: url("/images/bg-card-back.png") ;
     height: 250px;
     width: 100%;
     background-repeat: no-repeat;
+}
+.code {
+    padding: 7rem 3.5rem 0 0;
+    text-align: end;
+    color: var(--White);
+}
+
+@media (max-width: 1200px)  {
+    body{
+        padding: 0;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    
+    .main-mobile {
+        width: 100%;
+    }
+    .card {
+        position: absolute;
+        margin: 0;
+        top: 10%;
+    }
+    .front-card{
+        margin: 0;
+        max-width: 70%;
+    }
+    .verso-card {max-width: 80%;
+        margin: 1rem 0 0 0;
+    }
+    .formulary{
+        margin-top: 5rem;
+        width: 100%;
+    }
 }
